@@ -10,7 +10,7 @@ var reduce = function(nums, fn, init) {
         // If the length of the array is 0, it should return init.
     }
 
-    let val = init;
+    let val = 0;
 
     for (var i = 0; i < nums.length; i++) {
         if (i == 0) {
