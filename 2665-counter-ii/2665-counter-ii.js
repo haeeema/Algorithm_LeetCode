@@ -6,12 +6,8 @@
 
 var createCounter = function(init) {
     let temp = init;
-    const increment = function() {
-        return ++temp;
-    }
-    const decrement = function() {
-        return --temp;
-    }
+    const increment = () => ++temp;
+    const decrement = () => --temp;
     const reset = function() {
         temp = init;
         return temp;
