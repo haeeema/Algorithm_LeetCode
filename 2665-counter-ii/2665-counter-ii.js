@@ -4,15 +4,24 @@
  */
 
 
+// var createCounter = function(init) {
+//     let temp = init;
+//     const increment = () => ++temp;
+//     const decrement = () => --temp;
+//     const reset = function() {
+//         temp = init;
+//         return temp;
+//     }
+//     return { increment, decrement, reset };
+// };
+
 var createCounter = function(init) {
     let temp = init;
-    const increment = () => ++temp;
-    const decrement = () => --temp;
-    const reset = function() {
-        temp = init;
-        return temp;
-    }
-    return { increment, decrement, reset };
+    return {
+        increment: () => ++temp,
+        decrement: () => --temp,
+        reset: () => (temp = init)
+    };
 };
 
 /**
