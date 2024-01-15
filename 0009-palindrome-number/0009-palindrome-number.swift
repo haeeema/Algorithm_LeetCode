@@ -5,7 +5,11 @@ class Solution {
         }
         
         var reversedX: Int? = Int(String(String(x).reversed()))
-        return x == reversedX
+        if x == reversedX! {
+            return true
+        } else {
+            return false
+        }
     }
 }
 
