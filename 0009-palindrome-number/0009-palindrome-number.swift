@@ -4,12 +4,8 @@ class Solution {
             return false
         }
         
-        var y: Int? = Int(String(String(x).reversed()))
-        if x == y! {
-            return true
-        } else {
-            return false
-        }
+        var reversedX: Int? = Int(String(String(x).reversed()))
+        return x == reversedX
     }
 }
 
